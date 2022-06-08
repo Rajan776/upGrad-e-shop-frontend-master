@@ -84,117 +84,119 @@ export default function SignUp(props) {
         setSubmitAction(true);
     }
 
-    return (
-        <div>
-            {/* <Home id='home' /> */}
-            <Container component="main" maxWidth="xs">
+    return ( <
+        div > { /* <Home id='home' /> */ } <
+        Container component = "main"
+        maxWidth = "xs" >
 
-                <CssBaseline />
-                <div className={classes.paper}>
-                    <Avatar className={classes.avatar}>
+        <
+        CssBaseline / >
+        <
+        div className = { classes.paper } >
+        <
+        Avatar className = { classes.avatar } >
 
-                    </Avatar>
-                    <Typography component="h1" variant="h5">
-                        Sign up
-                    </Typography>
-                    <form className={classes.form} noValidate>
-                        <Grid container spacing={2}>
-                            <Grid item xs={12}>
-                                <TextField
-                                    autoComplete="fname"
-                                    name="firstName"
-                                    variant="outlined"
-                                    required
-                                    fullWidth
-                                    id="firstName"
-                                    label="First Name"
-                                    autoFocus
-                                    onClick={() => { setfirstName("rajan") }}
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    variant="outlined"
-                                    required
-                                    fullWidth
-                                    id="lastName"
-                                    label="Last Name"
-                                    name="lastName"
-                                    autoComplete="lname"
-                                    onClick={() => { setlastName("tiwari") }}
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    variant="outlined"
-                                    required
-                                    fullWidth
-                                    id="email"
-                                    label="Email Address"
-                                    name="email"
-                                    autoComplete="email"
-                                    onClick={() => { setEmail("tiwari") }}
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    variant="outlined"
-                                    required
-                                    fullWidth
-                                    name="password"
-                                    label="Password"
-                                    type="password"
-                                    id="password"
-                                    autoComplete="current-password"
-                                    onClick={() => { setPassword("tiwari") }}
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    variant="outlined"
-                                    required
-                                    fullWidth
-                                    name="confirmpassword"
-                                    label="Confirm Password"
-                                    type="confirmpassword"
-                                    id="confirmpassword"
-                                    autoComplete="current-password"
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    variant="outlined"
-                                    required
-                                    fullWidth
-                                    name="contactnumber"
-                                    label="Contact Number"
-                                    type="contactnumber"
-                                    id="contactnumber"
-                                    autoComplete="Contact-Number"
-                                />
-                            </Grid>
-                        </Grid>
-                        <Button
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            color="primary"
-                            className={classes.submit}
-                            onClick={submitForm}
-                        >
-                            Sign Up
-                        </Button>
-                        <Grid container justify="flex-end">
-                            <Grid item>
-                                <Link to='/login'>
-                                    Already have an account? Sign in
-                                </Link>
-                            </Grid>
-                        </Grid>
-                    </form>
-                </div>
+        <
+        /Avatar> <
+        Typography component = "h1"
+        variant = "h5" >
+        Sign up <
+        /Typography> <
+        form className = { classes.form }
+        noValidate >
+        <
+        Grid container spacing = { 2 } >
+        <
+        Grid item xs = { 12 } >
+        <
+        TextField autoComplete = "fname"
+        name = "firstName"
+        variant = "outlined"
+        required fullWidth id = "firstName"
+        label = "First Name"
+        autoFocus onClick = {
+            () => { setfirstName("rajan") } }
+        /> <
+        /Grid> <
+        Grid item xs = { 12 } >
+        <
+        TextField variant = "outlined"
+        required fullWidth id = "lastName"
+        label = "Last Name"
+        name = "lastName"
+        autoComplete = "lname"
+        onClick = {
+            () => { setlastName("tiwari") } }
+        /> <
+        /Grid> <
+        Grid item xs = { 12 } >
+        <
+        TextField variant = "outlined"
+        required fullWidth id = "email"
+        label = "Email Address"
+        name = "email"
+        autoComplete = "email"
+        onClick = {
+            () => { setEmail("tiwari") } }
+        /> <
+        /Grid> <
+        Grid item xs = { 12 } >
+        <
+        TextField variant = "outlined"
+        required fullWidth name = "password"
+        label = "Password"
+        type = "password"
+        id = "password"
+        autoComplete = "current-password"
+        onClick = {
+            () => { setPassword("tiwari") } }
+        /> <
+        /Grid> <
+        Grid item xs = { 12 } >
+        <
+        TextField variant = "outlined"
+        required fullWidth name = "confirmpassword"
+        label = "Confirm Password"
+        type = "confirmpassword"
+        id = "confirmpassword"
+        autoComplete = "current-password" /
+        >
+        <
+        /Grid> <
+        Grid item xs = { 12 } >
+        <
+        TextField variant = "outlined"
+        required fullWidth name = "contactnumber"
+        label = "Contact Number"
+        type = "contactnumber"
+        id = "contactnumber"
+        autoComplete = "Contact-Number" /
+        >
+        <
+        /Grid> <
+        /Grid> <
+        Button type = "submit"
+        fullWidth variant = "contained"
+        color = "primary"
+        className = { classes.submit }
+        onClick = { submitForm } >
+        Sign Up <
+        /Button> <
+        Grid container justify = "flex-end" >
+        <
+        Grid item >
+        <
+        Link to = '/login' >
+        Already have an account ? Sign in
+        <
+        /Link> <
+        /Grid> <
+        /Grid> <
+        /form> <
+        /div>
 
-            </Container>
-        </div>
+        <
+        /Container> <
+        /div>
     );
 }
